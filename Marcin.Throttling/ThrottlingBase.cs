@@ -1,4 +1,4 @@
-﻿namespace ClassLibrary4
+﻿namespace Marcin.Throttling
 {
     using System;
     using System.Collections.Generic;

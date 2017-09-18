@@ -1,4 +1,4 @@
-namespace ClassLibrary4
+namespace Marcin.Throttling
 {
     using System.Linq;
     using System.Threading;
@@ -32,36 +32,21 @@ namespace ClassLibrary4
         {
             var myTasks = this.AllTasks.ToArray();
 
-            using (var semaphore = new Semaphore(this.maximumParallel, this.maximumParallel))
+            using (var semaphore = new SemaphoreSlim(this.maximumParallel, this.maximumParallel))
             {
                 await Task.WhenAll(myTasks.Select(
                     async t =>
                         {
-                            var release = false;
-
                             try
                             {
-                                while (true)
-                                {
-                                    cancellationToken.ThrowIfCancellationRequested();
-
-                                    // ReSharper disable once AccessToDisposedClosure
-                                    if (semaphore.WaitOne(3000))
-                                    {
-                                        release = true;
-                                        break;
-                                    }
-                                }
-
-                                await t(cancellationToken);
+                                // ReSharper disable once AccessToDisposedClosure
+                                await semaphore.WaitAsync(cancellationToken).ConfigureAwait(false);
+                                await t(cancellationToken).ConfigureAwait(false);
                             }
                             finally
                             {
-                                if (release)
-                                {
-                                    // ReSharper disable once AccessToDisposedClosure
-                                    semaphore.Release(1);
-                                }
+                                // ReSharper disable once AccessToDisposedClosure
+                                semaphore.Release(1);
                             }
                         }));
             }   

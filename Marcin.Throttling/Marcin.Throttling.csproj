@@ -7,8 +7,8 @@
     <ProjectGuid>{D5C6EB7D-F202-4159-A7C6-9EE7CA61ED61}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClassLibrary4</RootNamespace>
-    <AssemblyName>ClassLibrary4</AssemblyName>
+    <RootNamespace>Marcin.Throttling</RootNamespace>
+    <AssemblyName>Marcin.Throttling</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

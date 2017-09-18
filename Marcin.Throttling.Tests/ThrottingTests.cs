@@ -6,8 +6,6 @@
     using System.Threading;
     using System.Threading.Tasks;
 
-    using ClassLibrary4;
-
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     /// <summary>
