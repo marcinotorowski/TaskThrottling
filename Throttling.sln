@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marcin.Throttling.Tests", "Marcin.Throttling.Tests\Marcin.Throttling.Tests.csproj", "{B4C249ED-1F1B-4947-92CD-D1D670F1D8CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marcin.Throttling", "Marcin.Throttling\Marcin.Throttling.csproj", "{D5C6EB7D-F202-4159-A7C6-9EE7CA61ED61}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9EF6CAE8-1B07-47A2-9124-DD47B72BA300}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4C249ED-1F1B-4947-92CD-D1D670F1D8CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C249ED-1F1B-4947-92CD-D1D670F1D8CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C249ED-1F1B-4947-92CD-D1D670F1D8CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C249ED-1F1B-4947-92CD-D1D670F1D8CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5C6EB7D-F202-4159-A7C6-9EE7CA61ED61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C6EB7D-F202-4159-A7C6-9EE7CA61ED61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C6EB7D-F202-4159-A7C6-9EE7CA61ED61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C6EB7D-F202-4159-A7C6-9EE7CA61ED61}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B4C249ED-1F1B-4947-92CD-D1D670F1D8CC} = {9EF6CAE8-1B07-47A2-9124-DD47B72BA300}
+	EndGlobalSection
+EndGlobal
